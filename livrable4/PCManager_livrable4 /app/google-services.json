@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "747580540914",
+    "project_id": "pc-manager-2836c",
+    "storage_bucket": "pc-manager-2836c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747580540914:android:a2a416d4b272ec42664d6b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEHXB4tSDbHCsvgFUMFEfshjr20bPdr-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

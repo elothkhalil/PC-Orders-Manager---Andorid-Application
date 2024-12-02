@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title for the Admin Panel -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Panel"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Button for managing Requesters -->
+    <Button
+        android:id="@+id/manageUsersButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gérer les utilisateurs Requester"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:elevation="4dp" />
+
+    <!-- Button for clearing the database -->
+    <Button
+        android:id="@+id/clearDatabaseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vider la base de données"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:elevation="4dp" />
+
+    <!-- Button for resetting the entire database -->
+    <Button
+        android:id="@+id/resetDatabaseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Réinitialiser la base de données"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:elevation="4dp" />
+
+    <!-- Button for resetting the stock -->
+    <Button
+        android:id="@+id/resetStockButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Réinitialiser le stock"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:elevation="4dp" />
+
+    <!-- Button for logging out -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se déconnecter"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:elevation="4dp" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "component1",
+    "name": "Processor",
+    "quantity": 10
+  },
+  {
+    "id": "component2",
+    "name": "RAM",
+    "quantity": 20
+  }
+]

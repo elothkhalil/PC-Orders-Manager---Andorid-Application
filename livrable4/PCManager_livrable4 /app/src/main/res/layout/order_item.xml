@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <!-- Nom du composant -->
+    <TextView
+        android:id="@+id/componentName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Component Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Identifiant du composant -->
+    <TextView
+        android:id="@+id/componentId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Component ID"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintTop_toBottomOf="@id/componentName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/status" />
+
+    <!-- Statut -->
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintTop_toBottomOf="@id/componentName"
+        app:layout_constraintStart_toEndOf="@id/componentId"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Date de création -->
+    <TextView
+        android:id="@+id/createdAt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Created At"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/componentId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Date de modification -->
+    <TextView
+        android:id="@+id/modifiedAt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Modified At"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/createdAt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bouton pour approuver la commande -->
+    <Button
+        android:id="@+id/approveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Approve"
+        app:layout_constraintTop_toBottomOf="@id/modifiedAt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rejectButton"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <!-- Bouton pour rejeter la commande -->
+    <Button
+        android:id="@+id/rejectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reject"
+        app:layout_constraintTop_toBottomOf="@id/modifiedAt"
+        app:layout_constraintStart_toEndOf="@id/approveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

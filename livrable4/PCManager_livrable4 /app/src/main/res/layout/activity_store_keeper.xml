@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/componentNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Component Name"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/componentQuantityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:layout_below="@id/componentNameInput"
+        android:layout_marginBottom="8dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/addComponentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Component"
+        android:layout_below="@id/componentQuantityInput"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_below="@id/addComponentButton"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:id="@+id/componentListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoutButton"
+        android:dividerHeight="1dp"
+        android:divider="@android:color/darker_gray" />
+
+</RelativeLayout>
