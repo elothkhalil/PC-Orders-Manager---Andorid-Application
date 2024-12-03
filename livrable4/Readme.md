@@ -81,15 +81,6 @@ Les fichiers sont disponibles en format source et PDF.
 
 ---
 
-## **Contributions de l'équipe**
-
-| **Nom**           | **Prénom**        | **Numéro étudiant** | **Contributions principales**                                    |
-|-------------------|-------------------|---------------------|------------------------------------------------------------------|
-| **El Othmani**    | **Mohamed Khalil**| **300389979**       | Intégration Firebase et développement backend.                   |
-| **Rachidi**       | **Zouheir**       | **300329396**         | Développement des interfaces Android (UI/UX).                    |
-| **Taleb**         | **Nizar**         | **300371104**       | Tests unitaires avec Mockito, coordination GitHub,documentation. |
-
----
 
 ## **Livrable 4 - Tag Git**
 Pour marquer ce livrable comme complet, utilisez le tag suivant :
